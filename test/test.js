@@ -2,7 +2,7 @@ var expect = require('chai').expect;
 var [addTwoNumbers, addArrayNumbers] = require('../index');
 
 describe('addTwoNumbers()', function () {
-  it('should add two numbers', function () {
+  it('should add two numbers @default', function () {
     
     // 1. ARRANGE
     var x = 967;
@@ -21,10 +21,10 @@ describe('addTwoNumbers()', function () {
 });
 
 describe('addArrayNumbers()', function () {
-  it('should add the whole array of numbers', function () {
+  it('should add the whole array of numbers @exploit', function () {
     
     // 1. ARRANGE
-    var numbers = [967,78,0,0,0,0,8888];
+    var numbers = [967, 78, 0, 0, 0, 0, 8888];
     var sum1 = 967 + 78 + 0 + 0 + 0 + 0 + 8888;
 
     // 2. ACT
@@ -37,12 +37,10 @@ describe('addArrayNumbers()', function () {
 });
 
 describe('addArrayNumbers()', function () {
-  it('should add the whole array of numbers', function () {
+  it('should add the whole array of numbers @default', function () {
     
     // 1. ARRANGE
-    //var x = 967;
-    //var y = 78;
-    var numbers = [1,2,3,4,5];
+    var numbers = [1, 2, 3, 4, 5];
     var sum1 = 1 + 2 + 3 + 4 + 5;
 
     // 2. ACT

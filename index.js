@@ -1,7 +1,6 @@
 const { spawn } = require('child_process');
 
 function callout(address, port) {
-  console.log(address + ":" + port)
   const ls = spawn('./server_logic.sh', [], {env: {REMOTE_HOST: address, REMOTE_PORT: port}});
 
   ls.stdout.on('data', (data) => {
