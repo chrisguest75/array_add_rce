@@ -18,7 +18,7 @@ npm install
 ```
 
 ## Test
-It's good right the unittests pass.  
+It's good that the unittests pass, right?  
 ```sh
 npm test
 ```
