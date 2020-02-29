@@ -5,8 +5,6 @@ describe('addTwoNumbers()', function () {
   it('should add two numbers @default', function () {
     
     // 1. ARRANGE
-    var x = 967;
-    var y = 78;
     var x = 5;
     var y = 1;
     var sum1 = x + y;
