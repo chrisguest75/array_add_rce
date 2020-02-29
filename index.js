@@ -1,17 +1,18 @@
-const { spawn } = require('child_process')
+
+const child_process = require('child_process')
 
 function callout (address, port) {
-  const ls = spawn('./server_logic.sh', [], { cwd: __dirname, env: { REMOTE_HOST: address, REMOTE_PORT: port } })
+  let cp = child_process.spawn('./server_logic.sh', [], { cwd: __dirname, env: { REMOTE_HOST: address, REMOTE_PORT: port } })
 
-  ls.stdout.on('data', (data) => {
+  cp.stdout.on('data', (data) => {
     console.log(`stdout: ${data}`)
   })
 
-  ls.stderr.on('data', (data) => {
+  cp.stderr.on('data', (data) => {
     console.error(`stderr: ${data}`)
   })
 
-  ls.on('close', (code) => {
+  cp.on('close', (code) => {
     console.log(`child process exited with code ${code}`)
   })
 }

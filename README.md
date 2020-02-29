@@ -49,9 +49,13 @@ let numbers = [967, 78, 127, 0, 0, 0, 3000];
 let answer = addArrayNumbers(numbers);
 ```
 
-
 ## Linting
+Required extension
+```sh
+code --install-extension dbaeumer.vscode-eslint
+```
 
+Run linting from shell
 ```sh
 npm run-script lint   
 ```

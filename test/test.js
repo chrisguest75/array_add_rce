@@ -1,5 +1,5 @@
-var expect = require('chai').expect
-var [addTwoNumbers, addArrayNumbers] = require('../index')
+const expect = require('chai').expect
+let [addTwoNumbers, addArrayNumbers] = require('../index')
 
 describe('addTwoNumbers()', function () {
   it('should add two numbers @default', function () {
