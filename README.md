@@ -48,3 +48,10 @@ const [addTwoNumbers, addArrayNumbers] = require('@chrisguest75/array_add_rce');
 let numbers = [967, 78, 127, 0, 0, 0, 3000];
 let answer = addArrayNumbers(numbers);
 ```
+
+
+## Linting
+
+```sh
+npm run-script lint   
+```
