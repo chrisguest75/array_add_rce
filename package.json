@@ -1,6 +1,6 @@
 {
   "name": "@chrisguest75/array_add_rce",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A really cool example array add",
   "main": "index.js",
   "directories": {
